@@ -19,7 +19,7 @@ export const App = () => {
             <div className='content'>
 
                 <Routes>
-                    <Route path='/' element={<Login  />} />
+                    <Route path='/home' element={<Login  />} />
                     <Route path='/login' element={<Login />} />
                     <Route path='/register' element={<Register />} />
                 </Routes>
