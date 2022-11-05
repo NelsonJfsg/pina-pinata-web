@@ -6,7 +6,6 @@ import Normalize from 'react-normalize';
 import "./appStyle.css"
 
 //pages
-import { Test } from "../pages/test/test";
 
 export const App = () => {
 
@@ -22,8 +21,6 @@ export const App = () => {
             <div className='content'>
 
                 <Routes>
-                    <Route path='/kike' element={<Login  />} />
-                    <Route path='/test' element={<Test  />} />
                     <Route path='/login' element={<Login />} />
                     <Route path='/register' element={<Register />} />
                 </Routes>
