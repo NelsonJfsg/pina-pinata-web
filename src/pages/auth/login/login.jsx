@@ -1,5 +1,5 @@
 import "./loginStyle.css";
-import { CredentialForm } from "../../components/credentialForm/credentialForm";
+import { CredentialForm } from "../../../components/credentialForm/credentialForm";
 
 
 

@@ -1,6 +1,6 @@
 import { Link, Route, Routes } from 'react-router-dom';
-import { Login } from '../pages/login/Login';
-import { Register } from '../pages/register/register';
+import { Login } from '../pages/auth/login/Login';
+import { Register } from '../pages/auth/register/register';
 import { Nav } from "../components/header/nav/nav";
 import Normalize from 'react-normalize';
 import "./appStyle.css"
