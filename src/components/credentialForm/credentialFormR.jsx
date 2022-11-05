@@ -8,14 +8,14 @@ import { Input } from "../input/input";
 import Logo from '../../assets/images/logo.jpg';
 
 //Style
-import "./credentialFormStyles.css";
+import "./credentialFormRStyles.css";
 
 
-export const CredentialForm = ({buttonText}) => {
+export const CredentialFormR = ({buttonText}) => {
 
     return(
 
-        <form className= "login-container">
+        <form className="register-container">
                 
              <div>
                 <img className="image" src= {Logo}/>
@@ -30,15 +30,19 @@ export const CredentialForm = ({buttonText}) => {
             <form className="credential-container">
 
                 <div className="email">
-                    <Label text='Email'/>
+                    <Label text='Correo electrónico'/>
                     <Input typeOfInput="email"/>
                 </div>
                     
                 <div className="password">
-                    <Label text='Password'/>
+                    <Label text='Contraseña'/>
                     <Input typeOfInput="password"/>
                 </div>
-                
+
+                <div className="name">
+                    <Label text='Nombre'/>
+                    <Input typeOfInput="name"/>
+                </div>
 
             </form> 
             

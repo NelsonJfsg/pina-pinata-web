@@ -1,4 +1,4 @@
-import { CredentialForm } from "../../../components/credentialForm/credentialForm";
+import { CredentialFormR } from "../../../components/credentialForm/credentialFormR";
 
 import "./registerStyle.css";
 
@@ -7,7 +7,7 @@ export const Register = () => {
     return(
 
         <div className="container">
-            <CredentialForm buttonText="Register"/>
+            <CredentialFormR buttonText="Register"/>
         </div>
 
     );
