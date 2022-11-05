@@ -2,9 +2,6 @@ import "../input/inputStyle.css";
 
 export const Input = ({typeOfInput, text}) => {
 
-
-
-
     return(
 
         <>
