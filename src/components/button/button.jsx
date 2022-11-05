@@ -9,7 +9,7 @@ export const Button = ({text}) => {
 
         <>
             <div>
-                <input className='button'type="button" value={text}/>
+                <input className='button' type="button" value={text} />
             </div>
         </>
     

@@ -1,0 +1,21 @@
+.container-title h1{
+    display: block;
+    margin: 0;
+    text-align: center;
+}
+
+.container-nav{
+    text-align: center;
+
+}
+
+.container-nav > .nav-link{
+    display: inline-block;
+    text-align: center;
+}
+
+.nav-link{
+    color: black;
+    padding: 10px;
+    text-align: center;
+}
