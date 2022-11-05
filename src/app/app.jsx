@@ -5,8 +5,6 @@ import { Nav } from "../components/header/nav/nav";
 import Normalize from 'react-normalize';
 import "./appStyle.css"
 
-//pages
-
 export const App = () => {
 
     return (
@@ -21,6 +19,7 @@ export const App = () => {
             <div className='content'>
 
                 <Routes>
+                    <Route path='/home' element={<Login  />} />
                     <Route path='/login' element={<Login />} />
                     <Route path='/register' element={<Register />} />
                 </Routes>
