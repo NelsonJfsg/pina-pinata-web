@@ -44,6 +44,21 @@ export const CredentialFormR = ({buttonText}) => {
                     <Input typeOfInput="name"/>
                 </div>
 
+                <div className="fName">
+                    <Label text='Apellido paterno'/>
+                    <Input typeOfInput="fName"/>
+                </div>
+
+                <div className="lName">
+                    <Label text='Apellido materno'/>
+                    <Input typeOfInput="lName"/>
+                </div>
+
+                <div className="phone">
+                    <Label text='Numero de telefono'/>
+                    <Input typeOfInput="phone"/>
+                </div>
+
             </form> 
             
             {/* Button */}
