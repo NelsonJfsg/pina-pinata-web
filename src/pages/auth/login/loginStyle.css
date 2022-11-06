@@ -1,5 +1,5 @@
 body{
-    background-image: url("../../assets/images/background.jpg");
+    background-image: url("/src/assets/images/background.jpg");
 }
 
 .container > *{
