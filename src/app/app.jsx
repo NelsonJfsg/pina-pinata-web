@@ -6,6 +6,7 @@ import { Nav } from "../components/header/nav/nav";
 import Normalize from 'react-normalize';
 import "./appStyle.css"
 import { Home } from '../pages/home/home';
+import { LoginForm } from '../components/credentialForm/loginForm/loginForm';
 
 export const App = () => {
 
@@ -25,6 +26,7 @@ export const App = () => {
                     <Route path='/login' element={<Login />} />
                     <Route path='/register' element={<Register />} />
                     <Route path='/test' element={<Test />} />
+                    <Route path='/logintest' element={<LoginForm />} />
                 </Routes>
 
             </div>
