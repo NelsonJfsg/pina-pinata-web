@@ -1,5 +1,5 @@
 import "./rtestStyle.css";
-import { CredentialForm } from "../../../components/credentialForm/credentialForm";
+import { CredentialForm } from "../../../components/credentialForm/credential-login-form/credentialForm";
 
 
 
