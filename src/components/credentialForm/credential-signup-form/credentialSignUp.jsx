@@ -1,27 +1,26 @@
 //components
-import { Title } from "./title/title";
+import { Title } from "../title/title";
 //import { Button } from "../../components/button/button";
-import { Label } from "./label/label";
-import { Input, field } from "../input/input";
+import { Label } from "../label/label";
 
 //Material
 import Button from '@mui/material/Button';
 
 //Assets
-import Logo from '../../assets/images/logo.jpg';
+import Logo from '../../../assets/images/logo.jpg';
 
 //My imorts.
 
 //Api
-import {insertIntoDb} from '../../db/user/api'
+import {insertIntoDb} from '../../../db/user/api'
 
 
 //Style
-import "./credentialFormStyles.css";
+import "./credentialSignUpStyle.css";
 import { TextField } from "@mui/material";
 
 
-export const CredentialForm = ({buttonText}) => {
+export const CredentialSignUp = ({buttonText}) => {
 
     //Vars
     var thisEmail;
@@ -81,7 +80,7 @@ export const CredentialForm = ({buttonText}) => {
             {/* Button */}
             <div className="button-container">
 
-                <Button onClick={() => {insertIntoDb(thisEmail, thisPassword)}} variant = 'contained'> this is a button</Button>
+                <Button onClick={() => {insertIntoDb(thisEmail, thisPassword)}} variant = 'contained'> Sign Up</Button>
 
             </div>
     

@@ -1,12 +1,17 @@
-import { Link, Route, Routes } from 'react-router-dom';
+
+//Pages
 import { Login } from '../pages/auth/login/login';
 import { Register } from '../pages/auth/register/register';
 import { Test } from '../pages/auth/rtest/rtest';
 import { Nav } from "../components/header/nav/nav";
+import { Home } from '../pages/home/home';
+
+//Router
+import { Link, Route, Routes } from 'react-router-dom';
+
+//Style
 import Normalize from 'react-normalize';
 import "./appStyle.css"
-import { Home } from '../pages/home/home';
-import { LoginForm } from '../components/credentialForm/loginForm/loginForm';
 
 
 export const App = () => {
@@ -27,7 +32,6 @@ export const App = () => {
                     <Route path='/login' element={<Login />} />
                     <Route path='/register' element={<Register />} />
                     <Route path='/test' element={<Test />} />
-                    <Route path='/logintest' element={<LoginForm />} />
                 </Routes>
 
             </div>

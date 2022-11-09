@@ -22,7 +22,7 @@ export const insertIntoDb = (email, password) => {
         mode : 'cors',
     })
     .then(function (response) {
-        console.log("Lets go");
+        alert('User has been added. Please, login');
         return response.json();
     })
     .then(function (result) {
@@ -31,5 +31,12 @@ export const insertIntoDb = (email, password) => {
     .catch (function (error) {
         console.log('Request failed', error);
     });
+
+}
+
+export const verifyEmail = () => {
+
+    alert("Login");
+
 
 }
