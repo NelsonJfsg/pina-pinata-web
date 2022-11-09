@@ -1,18 +1,44 @@
 //components
 import { Title } from "./title/title";
-import { Button } from "../../components/button/button";
+//import { Button } from "../../components/button/button";
 import { Label } from "./label/label";
-import { Input } from "../input/input";
+import { Input, field } from "../input/input";
+
+//Material
+import Button from '@mui/material/Button';
 
 //Assets
 import Logo from '../../assets/images/logo.jpg';
 
+//My imorts.
+
+//Api
+import {insertIntoDb} from '../../db/user/api'
+
+
 //Style
 import "./credentialFormStyles.css";
+import { TextField } from "@mui/material";
 
 
 export const CredentialForm = ({buttonText}) => {
 
+    //Vars
+    var thisEmail;
+    var thisPassword;
+    
+    //Set email value
+    const handleChangeEmail = (event) => {
+        thisEmail = event.target.value;
+        console.log(thisEmail);
+    }
+    
+    //Set password value
+    const handleChangePassword = (event) => {
+        thisPassword = event.target.value;
+        console.log(thisPassword);
+    }
+    
     return(
 
         <form className= "login-container">
@@ -26,17 +52,27 @@ export const CredentialForm = ({buttonText}) => {
                 <Title text='PIÑA PIÑATA'/>
             </div>
 
-            {/* Label */}
+            {/* Inputs */}
             <form className="credential-container">
 
                 <div className="email">
                     <Label text='Email'/>
-                    <Input typeOfInput="email"/>
+                    <TextField 
+                        id='email' 
+                        label = 'email' 
+                        variant='outlined'
+                        value = {thisEmail}
+                        onChange={handleChangeEmail}/>
                 </div>
                     
                 <div className="password">
                     <Label text='Password'/>
-                    <Input typeOfInput="password"/>
+                    <TextField 
+                        id='password' 
+                        label = 'password' 
+                        variant='outlined'
+                        value = {thisPassword}
+                        onChange={handleChangePassword}/>
                 </div>
                 
 
@@ -44,12 +80,12 @@ export const CredentialForm = ({buttonText}) => {
             
             {/* Button */}
             <div className="button-container">
-                <Button text = {buttonText}/>
+
+                <Button onClick={() => {insertIntoDb(thisEmail, thisPassword)}} variant = 'contained'> this is a button</Button>
+
             </div>
-        
     
         </form>    
-
 
     );
 
