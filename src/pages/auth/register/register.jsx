@@ -5,11 +5,11 @@ import "./registerStyle.css";
 export const Register = () => {
 
     return(
-
+        
         <div className="container">
             <CredentialSignUp/>
         </div>
-
+        
     );
 
 }

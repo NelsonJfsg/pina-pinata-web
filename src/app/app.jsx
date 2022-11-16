@@ -13,6 +13,7 @@ import { Link, Route, Routes } from 'react-router-dom';
 import Normalize from 'react-normalize';
 import "./appStyle.css"
 
+
 export const App = () => {
 
     return (
@@ -20,10 +21,10 @@ export const App = () => {
         <>
             <Normalize/> 
             
+            
             <header className='header-nav'>
                 <Nav/>
             </header>
-
             <div className='content'>
 
                 <Routes>
