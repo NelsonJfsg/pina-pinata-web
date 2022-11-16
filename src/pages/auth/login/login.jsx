@@ -1,6 +1,11 @@
 import "./loginStyle.css";
 import { CredentialForm } from "../../../components/credentialForm/credential-login-form/credentialForm";
 
+const validation = () => {
+    alert('Crdenciales incorrectas');
+}
+
+
 export const Login = () => {
 
     return (
@@ -10,7 +15,6 @@ export const Login = () => {
                 <CredentialForm buttonText = "Login"/>
             </div>
         </>
-
 
     );
 }

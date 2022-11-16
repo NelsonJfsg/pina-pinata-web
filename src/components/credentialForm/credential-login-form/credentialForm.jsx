@@ -12,7 +12,7 @@ import Logo from '../../../assets/images/logo.jpg';
 //My imorts.
 
 //Api
-import {insertIntoDb, verifyEmail} from '../../../db/user/api'
+import {insertIntoDb} from '../../../db/user/api'
 
 
 //Style
@@ -80,7 +80,7 @@ export const CredentialForm = ({buttonText}) => {
             {/* Button */}
             <div className="button-container">
 
-                <Button onClick={() => {verifyEmail()}} variant = 'contained'> Login </Button>
+                <Button onClick={() => {}} variant = 'contained'> Login </Button>
 
             </div>
     
