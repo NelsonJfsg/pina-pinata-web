@@ -12,7 +12,7 @@ export const insertIntoDb = (name, lastName, middleName, email, password, role) 
             //Fill json
             user.name = name;
             user.lastName = lastName;
-            user.middleName = lastName;
+            user.middleName = middleName;
             user.email = email;
             user.password = password;
             user.role = role;

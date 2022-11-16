@@ -91,10 +91,10 @@ export const CredentialSignUp = ({buttonText}) => {
                     </div>
                         
                     <div className="password">
-                        <Label text='Password'/>
+                        <Label text='Contraseña'/>
                         <TextField 
                             id='password' 
-                            label = 'password' 
+                            label = 'contraseña' 
                             variant='outlined'
                             type = "password"
                             value = {password}
@@ -102,10 +102,10 @@ export const CredentialSignUp = ({buttonText}) => {
                     </div>
 
                     <div className="confirmPassword">
-                        <Label text='confirm password'/>
+                        <Label text='Confirma contraseña'/>
                         <TextField 
                             id='confirmPassword' 
-                            label = 'confirm password' 
+                            label = 'confirma contraseña' 
                             variant='outlined'
                             type = "password"
                             value = {confirmPassword}
@@ -116,39 +116,39 @@ export const CredentialSignUp = ({buttonText}) => {
                 
                 <div className="personal-information">
                     
-                    {/** Name */}
+                    {/** Nombre */}
                     <div className = "name">
-                        <Label text = 'Name'/>
+                        <Label text = 'Nombre'/>
                         <TextField  
                             id='name' 
-                            label = 'name' 
+                            label = 'nombre' 
                             variant='outlined'
                             value = {name}
                             onChange={handleChangeName}
                         />
                     </div>
 
-                    {/** Last name */}
-                    <div className = "lastName">
-                        <Label text = 'last name'/>
-                        <TextField  
-                            id='lastName' 
-                            label = 'lastName' 
-                            variant='outlined'
-                            value = {lastName}
-                            onChange={handleChangeLastName}
-                        />
-                    </div>
-
                     {/** Middle name */}
                     <div className = "middleName">
-                        <Label text = 'middle name'/>
+                        <Label text = 'Apellido Paterno'/>
                         <TextField  
                             id='middleName' 
-                            label = 'middleName' 
+                            label = 'apellido paterno' 
                             variant='outlined'
                             value = {middleName}
                             onChange={handleChangeMiddleName}
+                        />
+                    </div>
+
+                    {/** Last name */}
+                    <div className = "lastName">
+                        <Label text = 'Apellido Materno'/>
+                        <TextField  
+                            id='lastName' 
+                            label = 'apellido materno' 
+                            variant='outlined'
+                            value = {lastName}
+                            onChange={handleChangeLastName}
                         />
                     </div>
 
@@ -160,7 +160,7 @@ export const CredentialSignUp = ({buttonText}) => {
             {/* Button */}
             <div className="button-container">
 
-                <Button onClick={() => {insertIntoDb(name, lastName, middleName, email, password, role)}} variant = 'contained'> Sign Up</Button>
+                <Button onClick={() => {insertIntoDb(name, lastName, middleName, email, password, role)}} variant = 'contained'> Registrar</Button>
 
             </div>
     
