@@ -3,16 +3,21 @@
 //My imports
 import './buttonStyle.css';
 
-export const Button = ({text}) => {
+export const Button = ({ text, buttonId}) => {
 
-    return(
+    return (
 
         <>
             <div>
-                <input className='button' type="button" value={text} />
+                <input
+                    onClick={handleClick}
+                    className='button'
+                    name = {buttonId}
+                    type="button"
+                    value={text} />
             </div>
         </>
-    
+
     );
 
 }

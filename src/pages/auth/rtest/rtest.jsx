@@ -1,20 +1,17 @@
-import "./loginStyle.css";
+import "./rtestStyle.css";
 import { CredentialForm } from "../../../components/credentialForm/credential-login-form/credentialForm";
 
-const validation = () => {
-    alert('Crdenciales incorrectas');
-}
 
 
-export const Login = () => {
-
+export const Test = () => {
     return (
 
         <>
             <div className="container">
-                <CredentialForm buttonText = "Login"/>
+                <CredentialForm buttonText = "Test"/>
             </div>
         </>
+
 
     );
 }
