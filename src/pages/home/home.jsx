@@ -1,15 +1,15 @@
 export const Home = () => {
 
-    fetch('https://jsonplaceholder.typicode.com/posts?_limit=10')
-   .then(response => response.json())
-   .then(data => console.log(data));
-
-   let newData = {...data};
     return(
 
     <>
-        <h1>{newData}</h1>
-    
+        <div className="lateral-container">
+            <h1>side</h1>
+        </div>
+
+        <div>
+            <h1>main container</h1>
+        </div>
     </>
 
     );

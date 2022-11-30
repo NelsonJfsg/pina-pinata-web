@@ -1,5 +1,6 @@
 .container-title h1{
     color: brown;
+    background-color: white;
     display: block;
     margin: 0;
     text-align: center;
@@ -7,6 +8,7 @@
 
 .container-nav{
     text-align: center;
+    background-color: white;
 
 }
 
