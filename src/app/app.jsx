@@ -28,14 +28,9 @@ export const App = () => {
             <div className='content'>
 
                 <Routes>
-                    {/**
-                     * 
-                     * 
                     <Route path='/home' element={<Home  />} />
                     <Route path='/login' element={<Login />} />
-                    <Route path='/test' element={<Test />} />
-                     */}
-                    
+                    <Route path='/test' element={<Test />} />                    
                     <Route path='/register' element={<Register />} />
                 </Routes>
 
