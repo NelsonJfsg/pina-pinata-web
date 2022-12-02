@@ -55,20 +55,20 @@ export const CredentialForm = ({buttonText}) => {
             <form className="credential-container">
 
                 <div className="email">
-                    <Label text='Email'/>
+                    <Label text='Correo'/>
                     <TextField 
                         id='email' 
-                        label = 'email' 
+                        label = 'correo' 
                         variant='outlined'
                         value = {thisEmail}
                         onChange={handleChangeEmail}/>
                 </div>
                     
                 <div className="password">
-                    <Label text='Password'/>
+                    <Label text='Contraseña'/>
                     <TextField 
                         id='password' 
-                        label = 'password' 
+                        label = 'contraseña' 
                         variant='outlined'
                         value = {thisPassword}
                         onChange={handleChangePassword}/>
@@ -80,7 +80,7 @@ export const CredentialForm = ({buttonText}) => {
             {/* Button */}
             <div className="button-container">
 
-                <Button onClick={() => {}} variant = 'contained'> Login </Button>
+                <Button onClick={() => {}} variant = 'contained'> Iniciar Sesión </Button>
 
             </div>
     

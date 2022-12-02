@@ -81,10 +81,10 @@ export const CredentialSignUp = ({buttonText}) => {
 
                 <div className="credential-information">
                     <div className="email">
-                        <Label text='Email'/>
+                        <Label text='Correo'/>
                         <TextField 
                             id='email' 
-                            label = 'email' 
+                            label = 'correo' 
                             variant='outlined'
                             value = {email}
                             onChange={handleChangeEmail}/>
