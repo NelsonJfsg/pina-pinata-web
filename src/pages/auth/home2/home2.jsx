@@ -2,6 +2,7 @@
 import "./home2Style.css";
 import { Footer } from "../../../components/footer/footer";
 import { Nav2 } from "../../../components/header2/nav2";
+import { Cards } from "../../../components/cards/cards";
 
 export const Home2 = () => {
 
@@ -11,10 +12,8 @@ export const Home2 = () => {
             <header className='header-nav'>
                 <Nav2/>
             </header>
-            <div className="container">
-                <h1>Hola</h1>
-            </div>
-                <Footer/>
+            <Cards/>
+            <Footer/>
         </>
     );
 }

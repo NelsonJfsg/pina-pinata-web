@@ -1,5 +1,6 @@
 import { Footer } from "../../components/footer/footer";
 import { Nav } from "../../components/header/nav/nav";
+import { Cards } from "../../components/cards/cards";
 
 export const Home = () => {
 
@@ -9,13 +10,7 @@ export const Home = () => {
             <header className='header-nav'>
                 <Nav/>
             </header>
-        <div className="lateral-container">
-            <h1>side</h1>
-        </div>
-
-        <div>
-            <h1>main container</h1>
-        </div>
+        <Cards/>
         <div>
             <Footer/>
         </div>

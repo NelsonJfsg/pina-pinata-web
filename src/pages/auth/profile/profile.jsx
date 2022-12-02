@@ -19,6 +19,7 @@ export const Profile = () => {
                 <ul className="lista-profile">
                     <li>Nombre de Usuario: </li>
                     <li>Correo electronico de Usuario: </li>
+                    <li>Dirección de Usuario: </li>
                 </ul>
                 
 

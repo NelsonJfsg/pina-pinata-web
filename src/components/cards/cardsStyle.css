@@ -1,0 +1,33 @@
+
+
+.tarjetas{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.item{
+    -webkit-box-shadow: 0px 0px 51px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 51px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 51px 0px rgba(0,0,0,0.75);
+
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.boton-comprar{
+    height: 40px;
+    width: 180px;
+    border: none;
+    background-color: brown;
+    color: white;
+    font-size: bold;
+    border-radius: 5px;
+}
+
+.boton-comprar:hover{
+    cursor: pointer;
+    background-color: rgb(204, 62, 62);
+}
