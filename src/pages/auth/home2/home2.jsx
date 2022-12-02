@@ -14,9 +14,7 @@ export const Home2 = () => {
             <div className="container">
                 <h1>Hola</h1>
             </div>
-            <div>
                 <Footer/>
-            </div>
         </>
     );
 }

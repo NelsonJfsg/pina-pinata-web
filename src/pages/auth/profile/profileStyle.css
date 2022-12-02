@@ -1,0 +1,10 @@
+
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.lista-profile,li{
+    margin: 50px 0;
+}

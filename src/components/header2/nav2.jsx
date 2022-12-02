@@ -13,14 +13,19 @@ export const Nav2 = () => {
                     <h1>Piña piñata</h1>
                 </div>
 
-                <div className='container-nav'>
+                <div className='fondo-nav'>
 
-                    <Link className='nav-link' to="/Home2">Home</Link>
-                    <Link className='nav-link' to="/Home2">Tendencias</Link>
-                    <Link className='nav-link' to="/Home2">Carrito</Link>
-                    <Link className='nav-link' to="/profile">Perfil</Link>
+                    <div className='container-nav'>
+
+                        <Link className='nav-link' to="/Home2">Home</Link>
+                        <Link className='nav-link' to="/Home2">Tendencias</Link>
+                        <Link className='nav-link' to="/Home2">Carrito</Link>
+                        <Link className='nav-link' to="/profile">Perfil</Link>
+
+                    </div>
 
                 </div>
+                
 
             </div>
             
