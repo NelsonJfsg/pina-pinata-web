@@ -18,7 +18,7 @@ export const Nav2 = () => {
                     <Link className='nav-link' to="/Home2">Home</Link>
                     <Link className='nav-link' to="/Home2">Tendencias</Link>
                     <Link className='nav-link' to="/Home2">Carrito</Link>
-                    <Link className='nav-link' to="/Home2">Perfil</Link>
+                    <Link className='nav-link' to="/profile">Perfil</Link>
 
                 </div>
 
