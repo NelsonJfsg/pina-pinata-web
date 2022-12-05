@@ -1,6 +1,6 @@
 import "./comprarStyle.css";
-import { Footer } from "../../components/footer/footer";
-import { Nav2 } from "../../components/header2/nav2";
+import { Footer } from "../../../components/footer/footer";
+import { Nav2 } from "../../../components/header2/nav2";
 
 export const Comprar = () => {
 

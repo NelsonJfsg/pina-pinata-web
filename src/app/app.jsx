@@ -3,10 +3,10 @@
 import { Login } from '../pages/auth/login/login';
 import { Register } from '../pages/auth/register/register';
 import { Home } from '../pages/home/home';
-import { Home2 } from '../pages/auth/home2/home2';
-import { Profile } from '../pages/auth/profile/profile';
-import { Trend } from '../pages/auth/tendencia/trend';
-import { Comprar } from '../pages/comprar/comprar';
+import { Home2 } from '../pages/home/home2/home2';
+import { Profile } from '../pages/home/profile/profile';
+import { Trend } from '../pages/home/tendencia/trend';
+import { Comprar } from '../pages/home/comprar/comprar';
 
 //Router
 import { Link, Route, Routes } from 'react-router-dom';
