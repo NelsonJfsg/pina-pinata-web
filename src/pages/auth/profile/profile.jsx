@@ -2,6 +2,7 @@ import "./profileStyle.css";
 import { Footer } from "../../../components/footer/footer";
 import { Nav2 } from "../../../components/header2/nav2";
 import "../../../components/cards/cardsStyle.css";
+import { style } from "@mui/system";
 
 
 export const Profile = () => {
@@ -27,13 +28,15 @@ export const Profile = () => {
                 <button className="boton-comprar" onClick={() => mostrar("cambiar-clave")}>Mas opciones</button>
                 <div id="cambiar-clave">
                     <h2>Cambiar contraseña</h2>
-                    <form>
-                        <fieldset>
-                            <legend>Datos para cambiar contraseña</legend>
-
-                            <label>Contraseña Actual:</label>
-                            <label>Nueva Contraseña:</label>
-                            <label>Confirmar Contraseña:</label>
+                    <form className="formulario-perfil">
+                        <fieldset className="fieldset-formulario">
+                            <label className="etiquetas-formulario">Contraseña Actual:</label>
+                            <input type="password" placeholder="Contraseña Actual"/>
+                            <label className="etiquetas-formulario">Nueva Contraseña:</label>
+                            <input type="password" placeholder="Nueva Contraseña"/>
+                            <label className="etiquetas-formulario">Confirmar Contraseña:</label>
+                            <input type="password" placeholder="Nueva Contraseña"/>
+                            <button className="boton-comprar">Cambiar contraseña</button>
                         </fieldset>
                     </form>
                 </div>
@@ -44,7 +47,7 @@ export const Profile = () => {
                 
 
             </div>
-            <div className="perfil-footer">
+            <div>
                 <Footer/>
             </div>
         </>

@@ -1,8 +1,5 @@
 
-.perfil-footer{
-    position: fixed;
-    bottom: 0;
-}
+
 
 .contenedor{
     width: 90%;
@@ -16,4 +13,18 @@
 
 #cambiar-clave{
     visibility: hidden;
+}
+
+.formulario-perfil{
+    display: block;
+    margin-bottom: 20px;
+}
+
+.fieldset-formulario{
+    text-align: center;
+    padding: 30px 0;
+}
+
+.etiquetas-formulario{
+    margin: 10px 30px;
 }
