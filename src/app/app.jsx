@@ -5,6 +5,7 @@ import { Register } from '../pages/auth/register/register';
 import { Home } from '../pages/home/home';
 import { Home2 } from '../pages/auth/home2/home2';
 import { Profile } from '../pages/auth/profile/profile';
+import { Trend } from '../pages/auth/tendencia/trend';
 
 //Router
 import { Link, Route, Routes } from 'react-router-dom';
@@ -30,6 +31,7 @@ export const App = () => {
                     <Route path='/register' element={<Register />} />
                     <Route path='/profile' element={<Profile />} />
                     <Route path='/home2' element={<Home2 />} />
+                    <Route path='/tendencias' element={<Trend/>} />
                     
 
                 </Routes>

@@ -17,8 +17,8 @@ export const Nav2 = () => {
 
                     <div className='container-nav'>
 
-                        <Link className='nav-link' to="/Home2">Inicio</Link>
-                        <Link className='nav-link' to="/Home2">Tendencias</Link>
+                        <Link className='nav-link' to="/home2">Inicio</Link>
+                        <Link className='nav-link' to="/tendencias">Tendencias</Link>
                         <Link className='nav-link' to="/comprar">Carrito</Link>
                         <Link className='nav-link' to="/profile">Perfil</Link>
 
