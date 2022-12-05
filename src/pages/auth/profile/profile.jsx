@@ -45,7 +45,7 @@ export const Profile = () => {
                         <button className="boton-comprar">Cambiar contraseña</button>
                     </form>
 
-                    <h2>Ingresar Nuevo Usuario</h2>
+                    <h2>Crear Nuevo Usuario</h2>
                     <form className="formulario-perfil">
                         <fieldset className="fieldset-formulario">
                             <div>
@@ -72,9 +72,19 @@ export const Profile = () => {
                                 <label className="etiquetas-formualrio">E-mail:</label>
                                 <input type="email" placeholder="E-mail"/>
                             </div>
+
+                            <div>
+                                <label className="etiquetas-formulario">Contraseña:</label>
+                                <input type="password" placeholder="Contraseña"/>
+                            </div>
+
+                            <div>
+                                <label className="etiquetas-formulario">Confirmar Contraseña:</label>
+                                <input type="password" placeholder="Confirmar Contraseña"/>
+                            </div>
                             
                         </fieldset>
-                        <button className="boton-comprar">Ingresar Nuevo Usuario</button>
+                        <button className="boton-comprar">Crear Nuevo Usuario</button>
                     </form>
 
                 </div>
