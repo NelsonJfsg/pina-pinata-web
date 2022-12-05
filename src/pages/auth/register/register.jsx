@@ -18,7 +18,7 @@ export const Register = () => {
             <CredentialSignUp/>
         </div>
 
-        <div>
+        <div className="perfil-footer">
             <Footer/>
         </div>
         

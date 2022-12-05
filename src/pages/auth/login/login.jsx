@@ -20,7 +20,7 @@ export const Login = () => {
             <div className="container">
                 <CredentialForm buttonText = "Login"/>
             </div>
-            <div>
+            <div className="perfil-footer">
                 <Footer/>
             </div>
         </>
