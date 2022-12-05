@@ -20,6 +20,7 @@ export const Nav2 = () => {
                         <Link className='nav-link' to="/home2">Inicio</Link>
                         <Link className='nav-link' to="/tendencias">Tendencias</Link>
                         <Link className='nav-link' to="/comprar">Carrito</Link>
+                        <Link className='nav-link' to="/profile">Inventario</Link>
                         <Link className='nav-link' to="/profile">Perfil</Link>
 
                     </div>

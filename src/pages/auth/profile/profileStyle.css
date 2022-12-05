@@ -16,15 +16,29 @@
 }
 
 .formulario-perfil{
-    display: block;
     margin-bottom: 20px;
 }
 
+.fieldset-formulario-clave{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+    padding: 30px 0;
+}
+
 .fieldset-formulario{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
     text-align: center;
     padding: 30px 0;
 }
 
 .etiquetas-formulario{
     margin: 10px 30px;
+}
+
+.altura{
+    max-height: 30px;
 }

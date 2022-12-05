@@ -25,6 +25,7 @@
     color: white;
     font-size: bold;
     border-radius: 5px;
+    margin: 20px;
 }
 
 .boton-comprar:hover{
