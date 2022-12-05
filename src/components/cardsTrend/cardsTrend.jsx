@@ -20,22 +20,22 @@ export const CardsTrend = () => {
             <div className="item">
                 <img className="image" src= {Santa}/>
                 <h2>Piñata Santa Claus</h2>
-                <h3>Precio: </h3>
-                <p>Descripcion: </p>
+                <h3>Precio: $200</h3>
+                <p>Descripcion: Piñata de Santa Claus conmemortiva a fechas decembrinas</p>
                 <button className="boton-comprar">Comprar</button>
             </div>
             <div className="item">
                 <img className="image" src= {Arbol}/>
                 <h2>Piñata Árbol Navideño </h2>
-                <h3>Precio: </h3>
-                <p>Descripcion: </p>
+                <h3>Precio: $200</h3>
+                <p>Descripcion: Piñata de árbol navideño conmemortiva a fechas decembrinas </p>
                 <button className="boton-comprar">Comprar</button>
             </div>
             <div className="item">
             <img className="image" src= {Reno}/>
                 <h2>Piñata Reno </h2>
-                <h3>Precio: </h3>
-                <p>Descripcion: </p>
+                <h3>Precio: $250</h3>
+                <p>Descripcion: Piñata de reno navideño conmemortiva a fechas decembrinas</p>
                 <button className="boton-comprar">Comprar</button>
             </div>
         </div>
@@ -44,22 +44,22 @@ export const CardsTrend = () => {
             <div className="item">
                 <img className="image" src= {Mono}/>
                 <h2>Piñata Mono de Nieve </h2>
-                <h3>Precio: </h3>
-                <p>Descripcion: </p>
+                <h3>Precio: $250</h3>
+                <p>Descripcion: Piñata de mono de nieve conmemortiva a fechas decembrinas</p>
                 <button className="boton-comprar">Comprar</button>
             </div>
             <div className="item">
                 <img className="image" src= {Burrito}/>
                 <h2>Piñata Burrito </h2>
-                <h3>Precio: </h3>
-                <p>Descripcion: </p>
+                <h3>Precio: $200</h3>
+                <p>Descripcion: Piñata de burrito sabanero conmemortiva a fechas decembrinas</p>
                 <button className="boton-comprar">Comprar</button>
             </div>
             <div className="item">
             <img className="image" src= {GalletaJengibre}/>
                 <h2>Piñata Galleta Jengibre </h2>
-                <h3>Precio: </h3>
-                <p>Descripcion: </p>
+                <h3>Precio: $200</h3>
+                <p>Descripcion: Piñata de galleta de jengibre conmemortiva a fechas decembrinas</p>
                 <button className="boton-comprar">Comprar</button>
             </div>
         </div>
@@ -67,23 +67,23 @@ export const CardsTrend = () => {
         <div className="tarjetas">
             <div className="item">
                 <img className="image" src= {Grinch}/>
-                <h2>Piñata Grinch </h2>
-                <h3>Precio: </h3>
+                <h2>Piñata Grinch $250</h2>
+                <h3>Precio: Piñata de Grinch conmemortiva a fechas decembrinas</h3>
                 <p>Descripcion: </p>
                 <button className="boton-comprar">Comprar</button>
             </div>
             <div className="item">
             <img className="image" src= {Esfera}/>
                 <h2>Piñata Esfera </h2>
-                <h3>Precio: </h3>
-                <p>Descripcion: </p>
+                <h3>Precio: $300</h3>
+                <p>Descripcion: Piñata de esfera navideña conmemortiva a fechas decembrinas</p>
                 <button className="boton-comprar">Comprar</button>
             </div>
             <div className="item">
                 <img className="image" src= {Picos}/>
                 <h2>Piñata Noche Buena </h2>
-                <h3>Precio: </h3>
-                <p>Descripcion: </p>
+                <h3>Precio: $450</h3>
+                <p>Descripcion: Piñata de noche buena conmemortiva a fechas decembrinas</p>
                 <button className="boton-comprar">Comprar</button>
             </div>
         </div>
