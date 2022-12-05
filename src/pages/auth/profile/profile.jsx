@@ -25,7 +25,7 @@ export const Profile = () => {
 
 
             </div>
-            <div>
+            <div className="perfil-footer">
                 <Footer/>
             </div>
         </>

@@ -1,4 +1,9 @@
 
+.perfil-footer{
+    position: fixed;
+    bottom: 0;
+}
+
 .contenedor{
     width: 90%;
     max-width: 1200px;

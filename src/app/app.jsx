@@ -22,8 +22,7 @@ export const App = () => {
             <Normalize/> 
             
             
-            
-            <div className='content'>
+                <div className='content'>
 
                 <Routes>
                     <Route path='/' element={<Home  />} />
@@ -36,6 +35,7 @@ export const App = () => {
                 </Routes>
 
             </div>
+            
 
 
         </>
