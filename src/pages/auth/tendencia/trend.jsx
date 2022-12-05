@@ -1,7 +1,7 @@
 import "./trendStyle.css";
 import { Footer } from "../../../components/footer/footer";
 import { Nav2 } from "../../../components/header2/nav2";
-import { Cards } from  "../../../components/cards/cards";
+import { CardsTrend } from "../../../components/cardsTrend/cardsTrend";
 
 export const Trend = () => {
 
@@ -11,7 +11,7 @@ export const Trend = () => {
             <header className='header-nav'>
                 <Nav2/>
             </header>
-            <Cards/>
+            <CardsTrend/>
             <Footer/>
         </>
     )
