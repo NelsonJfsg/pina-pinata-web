@@ -1,6 +1,7 @@
 import "./profileStyle.css";
 import { Footer } from "../../../components/footer/footer";
 import { Nav2 } from "../../../components/header2/nav2";
+import "../../../components/cards/cardsStyle.css";
 
 
 export const Profile = () => {
@@ -22,7 +23,16 @@ export const Profile = () => {
                     <li>Dirección de Usuario: </li>
                 </ul>
                 
-
+                
+                <button className="boton-comprar" onClick={() => mostrar("cambiar-clave")}>Mas opciones</button>
+                <div id="cambiar-clave">
+                    
+                </div>
+                
+                
+                
+                
+                
 
             </div>
             <div className="perfil-footer">

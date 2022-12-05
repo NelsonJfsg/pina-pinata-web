@@ -6,3 +6,8 @@ body{
     margin: auto;
     margin-bottom: 20px;
 }
+
+.perfil-footer{
+    position: fixed;
+    bottom: 0;
+}

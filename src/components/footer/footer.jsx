@@ -6,8 +6,8 @@ export const Footer = () => {
 
         <>
         
-        <footer class="footer-seccion">
-            <p class='copyright'>Todos los derechos reservados 2022 &copy;</p>
+        <footer className="footer-seccion">
+            <p className='copyright'>Todos los derechos reservados 2022 &copy;</p>
         </footer>
 
         </>

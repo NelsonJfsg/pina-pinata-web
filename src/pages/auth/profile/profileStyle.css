@@ -13,3 +13,7 @@
 .lista-profile,li{
     margin: 50px 0;
 }
+
+#cambiar-clave{
+    visibility: hidden;
+}
