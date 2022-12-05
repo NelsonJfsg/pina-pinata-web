@@ -26,7 +26,16 @@ export const Profile = () => {
                 
                 <button className="boton-comprar" onClick={() => mostrar("cambiar-clave")}>Mas opciones</button>
                 <div id="cambiar-clave">
-                    
+                    <h2>Cambiar contraseña</h2>
+                    <form>
+                        <fieldset>
+                            <legend>Datos para cambiar contraseña</legend>
+
+                            <label>Contraseña Actual:</label>
+                            <label>Nueva Contraseña:</label>
+                            <label>Confirmar Contraseña:</label>
+                        </fieldset>
+                    </form>
                 </div>
                 
                 
