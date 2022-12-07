@@ -10,7 +10,7 @@ export const Nav2 = () => {
             <Normalize/>
             <div className='container-title'>
                 <div className='title'>
-                    <h1>Piña piñata</h1>
+                    <h1>Piña Piñata</h1>
                 </div>
 
                 <div className='fondo-nav'>
@@ -19,7 +19,6 @@ export const Nav2 = () => {
 
                         <Link className='nav-link' to="/home2">Inicio</Link>
                         <Link className='nav-link' to="/tendencias">Tendencias</Link>
-                        <Link className='nav-link' to="/comprar">Carrito</Link>
                         <Link className='nav-link' to="/inventario">Inventario</Link>
                         <Link className='nav-link' to="/profile">Perfil</Link>
                         <button className='boton-cerrar-sesion'>Cerrar sesion</button>

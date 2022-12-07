@@ -1,5 +1,5 @@
 .container-title h1{
-    color: brown;
+    color: rgb(201, 201, 46);
     background-color: white;
     display: block;
     margin: 0;
@@ -7,13 +7,13 @@
 }
 
 .fondo-nav{
-    background-color: brown;
+    background-color: rgb(201, 201, 46);
     margin: 20px 0;
 }
 
 .container-nav{
     text-align: center;
-    background-color: brown;
+    background-color: rgb(201, 201, 46);;
     margin-top: 20px;
     width: 90%;
     max-width: 1200px;
@@ -43,7 +43,7 @@
 }
 
 .boton-cerrar-sesion{
-    background-color: brown;
+    background-color: rgb(201, 201, 46);
     border: none;
     color: white;
     border-radius: 10px;

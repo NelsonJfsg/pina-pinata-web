@@ -10,7 +10,7 @@ export const Nav = () => {
             <Normalize/>
             <div className='container-title'>
                 <div className='title'>
-                    <h1>Piña piñata</h1>
+                    <h1>Piña Piñata</h1>
                 </div>
 
                 <div className='fondo-nav'>
