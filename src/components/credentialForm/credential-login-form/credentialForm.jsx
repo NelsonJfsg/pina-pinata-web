@@ -9,15 +9,18 @@ import Button from '@mui/material/Button';
 //Assets
 import Logo from '../../../assets/images/logo.jpg';
 
+import {insertIntoDb} from '../../../db/user/api'
+
 //My imorts.
 
 //Api
-import {insertIntoDb} from '../../../db/user/api'
+import {login} from '../../../db/user/api'
 
 
 //Style
 import "./credentialFormStyles.css";
 import { TextField } from "@mui/material";
+import { User } from "../../../models/user";
 
 
 export const CredentialForm = ({buttonText}) => {
@@ -80,7 +83,10 @@ export const CredentialForm = ({buttonText}) => {
             {/* Button */}
             <div className="button-container">
 
-                <Button onClick={() => {}} variant = 'contained'> Iniciar Sesión </Button>
+                <Button onClick={() => {
+                    login(thisEmail, thisPassword)
+                    
+                    }} variant = 'contained'> Iniciar Sesión </Button>
 
             </div>
     

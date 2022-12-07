@@ -11,7 +11,6 @@ const validation = () => {
 export const Login = () => {
 
     return (
-
         <>
             <header className='header-nav'>
                 <Nav/>
@@ -20,6 +19,7 @@ export const Login = () => {
             <div className="container">
                 <CredentialForm buttonText = "Login"/>
             </div>
+            
             <div className="perfil-footer">
                 <Footer/>
             </div>

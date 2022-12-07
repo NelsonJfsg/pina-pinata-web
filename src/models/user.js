@@ -1,12 +1,24 @@
 export class User {
-     id = 0;
-     email = null;
-     password = null;
+        
+    //Atributes
+    
+    id = 0;
+    role = 0;
 
-    constructor(id,email,password){
-        id = this.id;
-        email = this.email;
-        password = this.password;
+    name = null;
+    lastName = null;
+    middleName = null;
 
+    email = null;
+    password = null;
+
+
+
+
+    //Init
+    constructor(email, password){
+        this.email = email;
+        this.password = password;
     }
+
 }
