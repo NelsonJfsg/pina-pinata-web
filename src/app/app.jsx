@@ -7,6 +7,7 @@ import { Home2 } from '../pages/home/home2/home2';
 import { Profile } from '../pages/home/profile/profile';
 import { Trend } from '../pages/home/tendencia/trend';
 import { Comprar } from '../pages/home/comprar/comprar';
+import { Inventario } from '../pages/home/inventario/inventario';
 
 //Router
 import { Link, Route, Routes } from 'react-router-dom';
@@ -34,7 +35,7 @@ export const App = () => {
                     <Route path='/home2' element={<Home2 />} />
                     <Route path='/tendencias' element={<Trend/>} />
                     <Route path='/comprar' element={<Comprar/>} />
-                    
+                    <Route path='/inventario' element={<Inventario/>} />
 
                 </Routes>
 
