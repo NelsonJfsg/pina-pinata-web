@@ -21,7 +21,7 @@ function mostrarinventario(id){
     mostrarocultar = !mostrarocultar;
 
     if(mostrarocultar){
-        document.getElementById(id).style.display = "block";
+        document.getElementById(id).style.display = "grid";
     }else{
         document.getElementById(id).style.display = "none";
     }

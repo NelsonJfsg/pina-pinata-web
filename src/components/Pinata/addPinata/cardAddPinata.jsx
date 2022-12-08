@@ -31,7 +31,7 @@ export const CardAddPinata = () => {
     }
 
     const root = "https://drive.google.com/uc?export=view&id=";
-    const imageLion = "1RtMUENySEbr5vHAuPP2wNfcu7GRrY2Pm";
+    const imageLion = "1IYRCB9rQVFoHIoRYFdaJPnLS1EbvmiOo";
 
 
     return(

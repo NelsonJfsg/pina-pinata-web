@@ -1,0 +1,19 @@
+.cards{
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: white;
+    
+
+}
+
+.card{
+    margin: 10px;
+    border: 2px solid gray;
+    border-radius: 10px;
+
+}
+
+.item{
+    
+}

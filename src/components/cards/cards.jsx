@@ -19,77 +19,7 @@ export const Cards = () => {
     return(
 
         <>
-        
-        <div className="tarjetas">
-            <div className="item">
-                
-                <button className="boton-comprar">Eliminar</button>
-                <button className="boton-comprar">Editar</button>
-            </div>
-            <div className="item">
-                
-                <button className="boton-comprar">Eliminar</button>
-                <button className="boton-comprar">Editar</button>
-            </div>
-            <div className="item">
-                
-                <button className="boton-comprar">Eliminar</button>
-                <button className="boton-comprar">Editar</button>
-            </div>
-        </div>
-
-        <div className="tarjetas">
-            <div className="item">
-
-                <button className="boton-comprar">Eliminar</button>
-                <button className="boton-comprar">Editar</button>
-            </div>
-            <div className="item">
-                
-                <button className="boton-comprar">Eliminar</button>
-                <button className="boton-comprar">Editar</button>
-            </div>
-            <div className="item">
-
-                <button className="boton-comprar">Eliminar</button>
-                <button className="boton-comprar">Editar</button>
-            </div>
-        </div>
-
-        <div className="tarjetas">
-            <div className="item">
-
-                <button className="boton-comprar">Eliminar</button>
-                <button className="boton-comprar">Editar</button>
-            </div>
-            <div className="item">
-
-                <button className="boton-comprar">Eliminar</button>
-                <button className="boton-comprar">Editar</button>
-            </div>
-            <div className="item">
-
-                <button className="boton-comprar">Eliminar</button>
-                <button className="boton-comprar">Editar</button>
-            </div>
-        </div>
-        <div className="tarjetas">
-            <div className="item">
-
-                <button className="boton-comprar">Eliminar</button>
-                <button className="boton-comprar">Editar</button>
-            </div>
-            <div className="item">
-
-                <button className="boton-comprar">Eliminar</button>
-                <button className="boton-comprar">Editar</button>
-            </div>
-            <div className="item">
-
-                <button className="boton-comprar">Eliminar</button>
-                <button className="boton-comprar">Editar</button>
-            </div>
-        </div>
+            
         </>
 
     );
