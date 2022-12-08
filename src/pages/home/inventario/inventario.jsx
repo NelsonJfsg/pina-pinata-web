@@ -2,6 +2,8 @@ import "./inventarioStyle.css";
 import { Footer } from "../../../components/footer/footer";
 import { Nav2 } from "../../../components/header2/nav2";
 import { Cards } from "../../../components/cards/cards";
+import { CardAddPinata } from "../../../components/Pinata/addPinata/cardAddPinata";
+import { InventoryOfPinatas } from "../../../components/Pinata/getAllPinatas/inventoryOfPinatas";
 
 export const Inventario = () => {
 
@@ -25,10 +27,10 @@ export const Inventario = () => {
                     <div className="inventario-card">
                         <div id="inventarioactual">
                             <h1><center>Inventario Actual</center></h1>
-                            <Cards/>
+                            <InventoryOfPinatas/>
                         </div>
                         <div id="agregarpiñata">
-                            <h1>Agregar Piñata</h1>
+                            <CardAddPinata/>
                         </div>
                     </div>
                 </div>
