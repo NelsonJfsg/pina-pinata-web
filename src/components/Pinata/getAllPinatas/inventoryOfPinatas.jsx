@@ -25,7 +25,14 @@ export const InventoryOfPinatas = () => {
         setPinatas(res.data);
 
     }
-
+    
+    const deletePinata = async (id) => {
+        
+        
+            const res = await Axios.delete(`http://localhost:3000/product/pinata/delete/${id}`);
+            console.log(res)
+        
+    }
 
 
     /*

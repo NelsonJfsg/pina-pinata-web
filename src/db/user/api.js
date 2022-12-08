@@ -19,7 +19,7 @@ export const insertIntoDb = (name, lastName, middleName, email, password, role) 
             user.role = role;
         
             //Petition.
-            fetch('http://localhost:3000/api/auth/create-user/', { 
+            fetch('http://localhost:3000/api/auth/user/create-user/', { 
                 method : 'POST',
                 headers :{
                     'Content-Type' : 'application/json',
