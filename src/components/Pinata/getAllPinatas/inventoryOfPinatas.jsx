@@ -72,9 +72,6 @@ export const InventoryOfPinatas = () => {
             
                 </div>
 
-                <div className="Menu">
-
-                </div>
                 
         </>
         );

@@ -21,7 +21,7 @@ export const Nav2 = () => {
                         <Link className='nav-link' to="/tendencias">Tendencias</Link>
                         <Link className='nav-link' to="/inventario">Inventario</Link>
                         <Link className='nav-link' to="/profile">Perfil</Link>
-                        <button className='boton-cerrar-sesion'>Cerrar sesion</button>
+                        <button className='boton-cerrar-sesion' onClick={() => window.location.replace("http://localhost:5173/login")}>Cerrar sesion</button>
                     </div>
 
                 </div>
