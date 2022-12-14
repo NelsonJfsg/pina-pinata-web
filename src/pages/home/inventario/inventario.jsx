@@ -20,7 +20,7 @@ export const Inventario = () => {
                         <button className="boton-inventario" onClick={() => mostrarinventario("inventarioactual")}>
                             <h3>Inventario Actual</h3>
                         </button>
-                        <button className="boton-inventario" onClick={() => mostrarinventario("agregarpiñata")}>
+                        <button className="boton-inventario" onClick={() => agregarpin("agregarpiñata")}>
                             <h3>Agregar Nueva Piñata</h3>
                         </button>
                     </div>

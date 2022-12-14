@@ -5,35 +5,38 @@ let mostraragregarpin = false;
 let mostrareliminarpin = false;
 let mostrarmodificarpin = false;
 
-function mostrar(id){
-
-    mostrarocultar = !mostrarocultar;
-
-    if(mostrarocultar){
-        document.getElementById(id).style.visibility = "visible";
-    }else{
-        document.getElementById(id).style.visibility = "hidden";
-    }
-    
-} 
 
 function mostrarinventario(id){
-    mostrarocultar = !mostrarocultar;
+    mostrarocultarinv = !mostrarocultarinv;
 
-    if(mostrarocultar){
-        document.getElementById(id).style.display = "grid";
-    }else{
+    if(!mostrarocultarinv){
         document.getElementById(id).style.display = "none";
+    }else{
+        if(mostraragregarpin){
+            agregarpin("agregarpiñata");
+            if(mostrarocultarinv){
+                document.getElementById(id).style.display = "grid";
+            }
+        }else{
+            document.getElementById(id).style.display = "grid";
+        }
     }
 }
 
 function agregarpin(id){
     mostraragregarpin = !mostraragregarpin;
 
-    if(mostrarocultar){
-        document.getElementById(id).style.display = "block";
-    }else{
+    if(!mostraragregarpin){
         document.getElementById(id).style.display = "none";
+    }else{
+        if(mostrarocultarinv){
+            mostrarinventario("inventarioactual");
+            if(mostraragregarpin){
+                document.getElementById(id).style.display = "block";
+            }
+        }else{
+            document.getElementById(id).style.display = "block";
+        }
     }
 }
 
