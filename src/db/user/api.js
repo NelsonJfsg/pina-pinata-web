@@ -1,6 +1,8 @@
 import { redirect } from "react-router-dom";
+import Axios from 'axios';
 
-export const insertIntoDb = (name, lastName, middleName, email, password, role) => {
+
+export const insertIntoDbOld = (name, lastName, middleName, email, password, role) => {
 
     //Validate atributes not null
     if(email == '' || password == ''){
@@ -44,7 +46,70 @@ export const insertIntoDb = (name, lastName, middleName, email, password, role) 
 
 }
 
+export const insertIntoDb = (name, lastName, middleName, email, password, role) => {
+    
+    //Validate atributes not null
+    if(email == undefined || password == undefined){
+        alert('Llena todos los campos');
+    }else{
+
+            let query = 'http://localhost:3000/api/auth/user/create-user/';
+            //Json empty
+            var user = {}
+        
+            //Fill json
+            user.name = name;
+            user.lastName = lastName;
+            user.middleName = middleName;
+            user.email = email;
+            user.password = password;
+            user.role = role;
+        
+            console.log(user)
+            Axios.post(query, user)
+                .then(response => {
+                    console.log(response.data);
+                    alert(response.data);
+                    location.reload();
+                }).catch(err => {
+                    alert(err.response.data.message);
+                });
+            
+
+    }
+
+
+
+}
+
+
+
 export const login = (email, password) => {
+
+
+    //Json empty
+    const url = 'http://localhost:3000/api/auth/user/validate-user';
+    var user = {}
+        
+    //Fill json
+    user.email = email;
+    user.password = password;
+
+    Axios.post(url, user)
+        .then(response => { 
+
+            if(response.data){
+                window.location.replace("http://localhost:5173/home2");
+            }else{
+                alert("Credenciales incorrectas.")
+            }
+
+        })
+        .catch(err => alert("err" + err));
+        
+}
+
+export const loginOld = (email, password) => {
 
 
     //Json empty
@@ -68,7 +133,7 @@ export const login = (email, password) => {
         response.json().then(result => {
             if(result){
                 alert("Correo y contraseña correctos.");
-                window.location.replace("http://localhost:5173/home2");
+                
             }else{
                 alert("Credenciales incorrectas.");
             }

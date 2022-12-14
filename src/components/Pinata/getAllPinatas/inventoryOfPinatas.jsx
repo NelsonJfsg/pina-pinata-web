@@ -2,6 +2,7 @@ import { React, useState, useEffect } from "react";
 import Axios  from "axios";
 
 import "../../../components/Pinata/getAllPinatas/inventoryOfPinatasStyle.css";
+//import { deletePinata } from "./../../../db/pinata/apiPinata";
 import { Button } from "@mui/material";
 
 
@@ -28,9 +29,11 @@ export const InventoryOfPinatas = () => {
     
     const deletePinata = async (id) => {
         
-        
+            console.log("id: " + id);
+            
             const res = await Axios.delete(`http://localhost:3000/product/pinata/delete/${id}`);
             console.log(res)
+            location.reload();
         
     }
 
@@ -60,7 +63,6 @@ export const InventoryOfPinatas = () => {
     return(
         
         <>
-
                 <div className="cards">
                     {pinatas.map( pinata => (
                         <div className="card">
@@ -70,8 +72,7 @@ export const InventoryOfPinatas = () => {
                             <p >{pinata.description}</p>
                             <p >{pinata.price}</p>
                             
-                            <Button onClick={() => {}} variant = 'contained'> Editar</Button>
-                            <Button onClick={() => {}} variant = 'contained'> Eliminar</Button>
+                            <Button onClick={() => {deletePinata(pinata.id)}} variant = 'contained'> Eliminar</Button>
 
                         </div>
                         

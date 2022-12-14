@@ -1,37 +1,37 @@
+import { useIsFocusVisible } from "@mui/material";
+import Axios from "axios";
+
 
 export const createPinata = (title, description, price, imageUrl) => {
 
-            //Json empty
-            var pinata = {}
+
+    const url = 'http://localhost:3000/product/pinata/create-pinata';
+    
+    //Json empty
+    var pinata = {}
         
             //Fill json
             pinata.name = title;
             pinata.description = description;
-            pinata.price = price;
+            pinata.price = parseFloat(price);
             pinata.image = imageUrl;
 
         
             //Petition.
-            fetch('http://localhost:3000/product/pinata/create', { 
-                method : 'POST',
-                headers :{
-                    'Content-Type' : 'application/json',
-                    "Access-Control-Allow-Origin" : "*"
-                },
-                body : JSON.stringify(pinata),
-                mode : 'cors',
-            })
-            .then(function (response) {
-                alert('Piñata registrada con exito');
-                console.log(response);
-            })
-            .then(function (result) {
-                alert(result);
-            })
-            .catch (function (error) {
-                console.log('Request failed', error);
-            });
+            Axios.post(url, pinata)
+                .then(response => {
+                    if(response.data.identifiers[0].id){
+                        alert("Piñata creada.");
+                        location.reload();
+                    }
+                }).catch(err => {
+                        console.log();
+                        alert(err.response.data.message);
+                }); 
 }
 
+export const deletePinata = () => {
+
+}
 
 

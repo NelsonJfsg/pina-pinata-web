@@ -14,6 +14,7 @@ import Logo from '../../../assets/images/logo.jpg';
 //Api
 import {insertIntoDb} from '../../../db/user/api'
 
+import { ValidatorComponent } from 'react-material-ui-form-validator';
 
 //Style
 import "./credentialSignUpStyle.css";
