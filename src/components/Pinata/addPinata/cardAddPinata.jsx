@@ -32,7 +32,20 @@ export const CardAddPinata = () => {
 
     const root = "https://drive.google.com/uc?export=view&id=";
     const imageLion = "1IYRCB9rQVFoHIoRYFdaJPnLS1EbvmiOo";
-
+    const regex= /[A-Za-z]/g
+    const [error, seterror] = useState(false)
+    const handlesumit= ()=>{
+        debugger
+        if(title==null || description==null||price==null || image==null){
+                seterror(true)
+                console.log('error')
+            
+        }else{
+            seterror(false)
+            createPinata(title, description, price, image)
+        }
+        
+    }
 
     return(
         <>
@@ -54,7 +67,9 @@ export const CardAddPinata = () => {
                         variant="outlined"
                         value={title}
                         onChange={handleChangeOfTitle}    
-                    />
+                    /><br / >
+                    {error && title == null ?
+                    <label className="alert">Los nombres solo pueden ser caracteres</label>:""}
 
                     <TextField 
                         className="text-field" 
@@ -63,7 +78,9 @@ export const CardAddPinata = () => {
                         variant="outlined"
                         value={description}
                         onChange={handleChangeDescription}
-                    />
+                    /><br / >
+                    {error && description == null ?
+                    <label className="alert">Los nombres solo pueden ser caracteres</label>:""}
 
                     <TextField 
                         className="text-field" 
@@ -72,7 +89,9 @@ export const CardAddPinata = () => {
                         variant="outlined"    
                         value={price}
                         onChange={handleChangePrice}
-                    />
+                    /><br / >
+                    {error && price == null?
+                    <label className="alert">el precio tiene que ser numerico</label>:""}
 
                     <TextField 
                         className="text-field" 
@@ -81,12 +100,14 @@ export const CardAddPinata = () => {
                         variant="outlined"
                         value={image}
                         onChange={handleChangeImage}
-                    />
+                    /><br / >
+                    {error && image == null?
+                    <label className="alert">Las imagen tiene que ser un link </label>:""}
 
                 </div>
 
                 <div className="menu-container">
-                    <Button onClick={() => createPinata(title, description, price, image)} variant="contained">Agregar piñata</Button>
+                    <Button onClick={handlesumit} variant="contained">Agregar piñata</Button>
                 </div>
             </div>
 

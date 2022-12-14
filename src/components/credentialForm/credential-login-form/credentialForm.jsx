@@ -21,6 +21,7 @@ import {login} from '../../../db/user/api'
 import "./credentialFormStyles.css";
 import { TextField } from "@mui/material";
 import { User } from "../../../models/user";
+import { useState } from "react";
 
 
 export const CredentialForm = ({buttonText}) => {
@@ -32,14 +33,28 @@ export const CredentialForm = ({buttonText}) => {
     //Set email value
     const handleChangeEmail = (event) => {
         thisEmail = event.target.value;
+        
         console.log(thisEmail);
     }
+   
     
     //Set password value
     const handleChangePassword = (event) => {
         thisPassword = event.target.value;
         console.log(thisPassword);
     }
+    const [error, seterror] = useState(false)
+
+    const handlesummit = ()=>{
+        if(thisEmail==null || thisPassword== null){
+            seterror(true)
+        }else{
+            seterror(false)
+
+            login(thisEmail, thisPassword)
+        }
+    }
+
     
     return(
 
@@ -65,6 +80,9 @@ export const CredentialForm = ({buttonText}) => {
                         variant='outlined'
                         value = {thisEmail}
                         onChange={handleChangeEmail}/>
+                        <br/>
+                        {error && thisEmail==null ?
+                        <label className="alert">Email no valido favor de ingresar un email valido</label>:""}
                 </div>
                     
                 <div className="password">
@@ -75,6 +93,9 @@ export const CredentialForm = ({buttonText}) => {
                         variant='outlined'
                         value = {thisPassword}
                         onChange={handleChangePassword}/>
+                        <br/>
+                        {error && thisPassword==null ?
+                        <label className="alert">contraseña no valido favor de ingresar una contraseña valido</label>:""}
                 </div>
                 
 
@@ -83,10 +104,10 @@ export const CredentialForm = ({buttonText}) => {
             {/* Button */}
             <div className="button-container">
 
-                <Button onClick={() => {
-                    login(thisEmail, thisPassword)
+                <Button onClick=
                     
-                    }} variant = 'contained'> Iniciar Sesión </Button>
+                    {handlesummit}
+                    variant = 'contained'> Iniciar Sesión </Button>
 
             </div>
     

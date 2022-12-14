@@ -18,6 +18,7 @@ import {insertIntoDb} from '../../../db/user/api'
 //Style
 import "./credentialSignUpStyle.css";
 import { TextField } from "@mui/material";
+import { useState } from "react";
 
 
 export const CredentialSignUp = ({buttonText}) => {
@@ -31,7 +32,6 @@ export const CredentialSignUp = ({buttonText}) => {
     var password;
     var confirmPassword;
     var role = 1;
-    
     //Set email value
     const handleChangeEmail = (event) => {
         email = event.target.value;
@@ -61,7 +61,19 @@ export const CredentialSignUp = ({buttonText}) => {
         confirmPassword = event.target.value;
     }
     
-    
+    const [error,seterror] =useState(false)
+
+    const handlesumit= ()=>{
+        debugger
+        if(email==null || password==null||name==null || lastName==null||middleName==null||confirmPassword==null || email==""){
+            seterror(true)
+            console.log('error')
+        }else{
+            seterror(false)
+            {insertIntoDb(name, lastName, middleName, email, password, role)}
+        }
+        
+    }
     
     return(
 
@@ -88,6 +100,9 @@ export const CredentialSignUp = ({buttonText}) => {
                             variant='outlined'
                             value = {email}
                             onChange={handleChangeEmail}/>
+                        <br/>
+                            {error && email==null ?
+                                <label className="alert">Email no valido favor de ingrsar un Email valido</label>:""}
                     </div>
                         
                     <div className="password">
@@ -99,6 +114,9 @@ export const CredentialSignUp = ({buttonText}) => {
                             type = "password"
                             value = {password}
                             onChange={handleChangePassword}/>
+                        <br/>
+                            {error && password==null ?
+                                <label className="alert">contraseña no valido favor de ingrsar un contraseña valido</label>:""}
                     </div>
 
                     <div className="confirmPassword">
@@ -110,6 +128,9 @@ export const CredentialSignUp = ({buttonText}) => {
                             type = "password"
                             value = {confirmPassword}
                             onChange={handleChangeConfirmPassword}/>
+                        <br/>
+                            {error && confirmPassword==null ?
+                                <label className="alert">confirma contraseña no valido favor de ingrsar un confirma contraseña valido</label>:""}
                     </div>
 
                 </div>
@@ -126,6 +147,9 @@ export const CredentialSignUp = ({buttonText}) => {
                             value = {name}
                             onChange={handleChangeName}
                         />
+                        <br/>
+                        {error && name==null ?
+                                <label className="alert">nombre no valido favor de ingrsar un nombre valido</label>:""}
                     </div>
 
                     {/** Middle name */}
@@ -138,6 +162,9 @@ export const CredentialSignUp = ({buttonText}) => {
                             value = {middleName}
                             onChange={handleChangeMiddleName}
                         />
+                        <br/>
+                        {error && middleName==null ?
+                                <label className="alert">apellido paterno no valido favor de ingrsar un apellido paterno valido</label>:""}
                     </div>
 
                     {/** Last name */}
@@ -150,6 +177,9 @@ export const CredentialSignUp = ({buttonText}) => {
                             value = {lastName}
                             onChange={handleChangeLastName}
                         />
+                        <br/>
+                        {error && lastName==null ?
+                                <label className="alert">Apellido Materno no valido favor de ingrsar un Apellido Materno valido</label>:""}
                     </div>
 
                 </div>
@@ -160,7 +190,8 @@ export const CredentialSignUp = ({buttonText}) => {
             {/* Button */}
             <div className="button-container">
 
-                <Button onClick={() => {insertIntoDb(name, lastName, middleName, email, password, role)}} variant = 'contained'> Registrar</Button>
+            {/* <Button onClick={() => {insertIntoDb(name, lastName, middleName, email, password, role)}} variant = 'contained'> Registrar</Button> */}
+                <Button onClick={handlesumit} variant = 'contained'> Registrar</Button>
 
             </div>
     
