@@ -30,11 +30,20 @@ export const InventoryOfPinatas = () => {
     const deletePinata = async (id) => {
         
             console.log("id: " + id);
+
+            var sure = confirm("¿Esta seguro de querer eliminar esta piñata?");
+
+            if(sure){
+
+                const res = await Axios.delete(`http://localhost:3000/product/pinata/delete/${id}`);
+                console.log(res)
+                location.reload();
             
-            const res = await Axios.delete(`http://localhost:3000/product/pinata/delete/${id}`);
-            console.log(res)
-            location.reload();
-        
+            }else{
+                alert("Ok no te preocupes carnal, cuidate, toma agua");
+            }
+
+            
     }
 
 

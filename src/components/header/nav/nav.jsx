@@ -16,7 +16,7 @@ export const Nav = () => {
                 <div className='fondo-nav'>
                     <div className='container-nav'>
 
-                        <Link className='nav-link' to="/">Inicio</Link>
+                        
                         <Link className='nav-link' to="/Login">Iniciar Sesión</Link>
                         <Link className='nav-link' to="/Register">Registrar</Link>
 

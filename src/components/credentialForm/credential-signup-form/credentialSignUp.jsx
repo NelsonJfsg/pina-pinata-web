@@ -23,6 +23,9 @@ import { TextField } from "@mui/material";
 
 export const CredentialSignUp = ({buttonText}) => {
 
+    var emailErr;
+
+
     //Vars
     var name;
     var middleName;
@@ -33,10 +36,21 @@ export const CredentialSignUp = ({buttonText}) => {
     var confirmPassword;
     var role = 1;
     
+    //Errors
+    const handleErrEmail = (event) => {
+        emailErr = "asd"
+
+    }
+
+
+
     //Set email value
     const handleChangeEmail = (event) => {
         email = event.target.value;
-        console.log(email);
+        console.log(emailErr)
+        emailErr= email;
+        
+
     }
     
     //Set password value
@@ -82,6 +96,7 @@ export const CredentialSignUp = ({buttonText}) => {
 
                 <div className="credential-information">
                     <div className="email">
+
                         <Label text='Correo'/>
                         <TextField 
                             id='email' 
@@ -89,6 +104,7 @@ export const CredentialSignUp = ({buttonText}) => {
                             variant='outlined'
                             value = {email}
                             onChange={handleChangeEmail}/>
+                        <p>{emailErr}</p>
                     </div>
                         
                     <div className="password">

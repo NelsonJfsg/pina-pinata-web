@@ -16,7 +16,11 @@ export const createPinata = (title, description, price, imageUrl) => {
             pinata.price = parseFloat(price);
             pinata.image = imageUrl;
 
-        
+            if(pinata.price <= 0){
+                alert("Carnal la piñata esta muy bara");
+            }else{
+
+
             //Petition.
             Axios.post(url, pinata)
                 .then(response => {
@@ -25,9 +29,34 @@ export const createPinata = (title, description, price, imageUrl) => {
                         location.reload();
                     }
                 }).catch(err => {
-                        console.log();
-                        alert(err.response.data.message);
+
+
+                    console.log("array length" + err.response.data.message.length);
+                    console.log("array length" + err.response.data.message[0]);
+    
+                    for(var i = 0; i < err.response.data.message.length; i++){
+    
+                        switch (err.response.data.message[i]) {
+                            case "email must be an email":
+                                alert("El correo electronico no es valido.");
+                                break;
+                            case "name must contain only letters (a-zA-Z)":
+                                alert("El nombre debe de contener nomas letras alv");
+                                break;
+                            case "middleName must contain only letters (a-zA-Z)":
+                                alert("Apellido materno debe de contener solo letras.");
+                                break;
+                            case "lastName must contain only letters (a-zA-Z)":
+                                alert("Apellido paterno debe de contener solo letras.");
+                                break;
+                                
+                        }
+                    }
+
                 }); 
+
+            }
+
 }
 
 export const deletePinata = () => {
